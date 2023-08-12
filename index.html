@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thermometer</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="#">
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="heading">temperature converter</h1>
+      <form id="calcTemp" onsubmit="calculateTemp(); return false">
+        <div class="components">
+          <label for="temp-Degree" class="label temp-Degree">Degrees </label>
+          <br />
+          <input type="text" role="temperature" class="input-temp"  />
+          <br />
+          <label for="temp-type" class="label temp-type">Type </label>
+          <br />
+          <select name="temp-units" class="temp-units">
+            <option value="Fah">Fahrenheit</option>
+            <option value="Cel">Celsius</option>
+          </select>
+          <div class="result">
+            <label for="fresult" class="label fresult">Result</label>
+            <br />
+            <input type="text" role="temperature" class="output-temp" />
+          </div>
+        </div>
+        
+        <div class="btn-converter">
+          <input type="submit"class ="button btn-converter"></button>
+        </div>
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
